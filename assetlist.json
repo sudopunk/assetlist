@@ -1,0 +1,146 @@
+{
+  "furyaToken": {
+    "chainID": "furya-1",
+    "logos": {
+      "svg": "https://raw.githubusercontent.com/cosmos/chain-registry/master/furya/images/chain.svg"
+    },
+    "name": "Furya",
+    "apiURL": "https://api.furya.xyz",
+    "rpcURL": "https://rpc.furya.xyz",
+    "explorerURL": "https://explorer.furya.xyz/",
+    "minBlockHeight": 1,
+    "symbol": "FURY",
+    "coinLookup": [
+      {
+        "viewDenom": "FURY",
+        "chainDenom": "ufury",
+        "chainToViewConversionFactor": 1e-6
+      }
+    ],
+    "fees": {
+      "default": {
+        "gasEstimate": 350000,
+        "feeOptions": [
+          {
+            "denom": "FURY",
+            "amount": "0",
+            "type": "low"
+          },
+          {
+            "denom": "FURY",
+            "amount": "0.025",
+            "type": "average"
+          },
+          {
+            "denom": "FURY",
+            "amount": "0.05",
+            "type": "high"
+          }
+        ]
+      }
+    },
+    "addressPrefix": "furya",
+    "coinGeckoId": "furya",
+    "coinType": 118,
+    "ibcEnabled": true
+}
+  "osmosisToken": {
+    "chainID": "osmosis-1",
+    "logos": {
+      "svg": "https://raw.githubusercontent.com/bitsongofficial/assetlists/main/logos/osmo.svg"
+    },
+    "name": "Osmosis",
+    "apiURL": "https://api.osmo-test.bitsong.network",
+    "rpcURL": "https://rpc.osmo-test.bitsong.network",
+    "explorerURL": "https://www.mintscan.io/osmosis/",
+    "minBlockHeight": 1,
+    "symbol": "OSMO",
+    "coinLookup": [
+      {
+        "viewDenom": "OSMO",
+        "chainDenom": "uosmo",
+        "chainToViewConversionFactor": 1e-6
+      }
+    ],
+    "fees": {
+      "default": {
+        "gasEstimate": 3800000,
+        "feeOptions": [
+          {
+            "denom": "OSMO",
+            "amount": "0",
+            "type": "low"
+          },
+          {
+            "denom": "OSMO",
+            "amount": "0",
+            "type": "average"
+          },
+          {
+            "denom": "OSMO",
+            "amount": "0",
+            "type": "high"
+          }
+        ]
+      }
+    },
+    "addressPrefix": "osmo",
+    "coinGeckoId": "osmosis",
+    "coinType": 118
+  },
+  "tokens": [
+    {
+      "chainID": "cosmoshub-4",
+      "logos": {
+        "svg": "https://raw.githubusercontent.com/bitsongofficial/assetlists/main/logos/atom.svg"
+      },
+      "name": "Atom",
+      "apiURL": "https://lcd.cosmos.bas.network",
+      "rpcURL": "https://rpc.cosmos.bas.network/",
+      "explorerURL": "https://www.mintscan.io/cosmos/",
+      "minBlockHeight": 1,
+      "symbol": "ATOM",
+      "coinLookup": [
+        {
+          "viewDenom": "ATOM",
+          "chainDenom": "uatom",
+          "chainToViewConversionFactor": 1e-6
+        }
+      ],
+      "fees": {
+        "default": {
+          "gasEstimate": 350000,
+          "feeOptions": [
+            {
+              "denom": "ATOM",
+              "amount": "0.01",
+              "type": "low"
+            },
+            {
+              "denom": "ATOM",
+              "amount": "0.025",
+              "type": "average"
+            },
+            {
+              "denom": "ATOM",
+              "amount": "0.04",
+              "type": "high"
+            }
+          ]
+        }
+      },
+      "addressPrefix": "cosmos",
+      "coinGeckoId": "cosmos",
+      "coinType": 118,
+      "ibc": {
+        "osmosis": {
+          "sourceChannelId": "channel-0",
+          "destChannelId": "channel-141",
+          "destDenom": "ibc/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2",
+          "sourceDenom": "uatom"
+        }
+      },
+      "ibcEnabled": true
+    }
+  ]
+}
