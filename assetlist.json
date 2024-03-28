@@ -43,7 +43,7 @@
     "coinGeckoId": "furya",
     "coinType": 118,
     "ibcEnabled": false
-}
+},
   "osmosisToken": {
     "chainID": "osmosis-1",
     "logos": {
